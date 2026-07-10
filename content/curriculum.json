@@ -1,0 +1,2021 @@
+{
+  "version": "0.2-completo",
+  "unidades": [
+    {
+      "id": "U0",
+      "titulo": "El porqué",
+      "subtitulo": "Por qué invertir cambia tu vida",
+      "color": "#2f9e5c",
+      "mascota": "colmillo",
+      "lessons": [
+        {
+          "id": "U0-L1",
+          "titulo": "¿Por qué invertir?",
+          "icono": "seedling",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "Bienvenido, campeón",
+              "texto": "Soy Colmillo. No te voy a hacer rico mañana. Te voy a enseñar a hacerte rico en veinte años, con paciencia. ¿Tienes colmillo para eso?"
+            },
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "texto": "Guardar plata debajo del colchón se siente seguro… pero cada año vale un poco menos. Invertir es poner ese dinero a <b>trabajar por ti</b> mientras duermes."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "colmillo",
+              "pregunta": "¿Qué significa invertir?",
+              "pista": "Piensa en qué hace tu dinero.",
+              "opciones": [
+                "Poner el dinero a trabajar para que crezca con el tiempo",
+                "Apostar todo para hacerse rico rápido",
+                "Guardar los billetes en una caja fuerte"
+              ],
+              "correcta": 0,
+              "explicacion": "Invertir es lo contrario de apostar: es paciencia + tiempo, no adrenalina."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "colmillo",
+              "afirmacion": "Invertir es hacerse rico de la noche a la mañana.",
+              "esVerdadero": false,
+              "explicacion": "El que promete riqueza rápida te está vendiendo humo. Lo real es lento y aburrido… y funciona."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "texto": "Vas con colmillo. 🦷",
+              "resumen": [
+                "Invertir = poner el dinero a trabajar",
+                "No es apostar ni hacerse rico rápido",
+                "La paciencia es tu mayor ventaja"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U0-L2",
+          "titulo": "La inflación",
+          "icono": "flame",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "titulo": "Soy Lauta, el Profesor",
+              "texto": "La <b>inflación</b> es la subida de precios con el tiempo. Lo que hoy cuesta $100, en unos años cuesta $130. Si tu plata no crece, pierde poder."
+            },
+            {
+              "tipo": "slider",
+              "mascota": "lauta",
+              "pregunta": "Con inflación, $1.000 guardados sin invertir en 10 años pasan a valer más o menos como… ¿cuánto de hoy?",
+              "min": 400,
+              "max": 1000,
+              "paso": 50,
+              "respuesta": 600,
+              "tolerancia": 100,
+              "formato": "pesos",
+              "explicacion": "A ~5% anual, en 10 años $1.000 compran como ~$600 de hoy. La inflación se los comió callada."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "lauta",
+              "pregunta": "¿Por qué guardar dinero quieto es riesgoso?",
+              "opciones": [
+                "Porque la inflación le quita poder de compra cada año",
+                "Porque el banco te cobra por guardarlo",
+                "Porque los billetes se rompen"
+              ],
+              "correcta": 0,
+              "explicacion": "El dinero quieto no es neutro: pierde. Por eso 'no hacer nada' también es una decisión."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "lauta",
+              "resumen": [
+                "La inflación sube los precios con el tiempo",
+                "El dinero quieto pierde poder de compra",
+                "Invertir busca ganarle a la inflación"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U0-L3",
+          "titulo": "Interés compuesto",
+          "icono": "snowflake",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "La octava maravilla",
+              "texto": "El <b>interés compuesto</b> es cuando tus ganancias generan más ganancias. Es una bola de nieve: chica al inicio, gigante al final. El truco es <b>tiempo</b>."
+            },
+            {
+              "tipo": "calc",
+              "mascota": "colmillo",
+              "texto": "Juega con esto: mira cómo un aporte pequeño se vuelve enorme con los años.",
+              "calc": {
+                "aporte": 20,
+                "anios": 20,
+                "tasa": 8,
+                "periodo": "semana"
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "colmillo",
+              "pregunta": "¿Qué hace crecer más una inversión con interés compuesto?",
+              "opciones": [
+                "Empezar temprano y dejar pasar muchos años",
+                "Meter mucho dinero un solo mes y retirarlo",
+                "Revisar el precio todos los días"
+              ],
+              "correcta": 0,
+              "explicacion": "El tiempo es el ingrediente mágico. Empezar temprano vale más que empezar con mucho."
+            },
+            {
+              "tipo": "ordenar",
+              "mascota": "colmillo",
+              "pregunta": "Ordena la bola de nieve del interés compuesto:",
+              "pasos": [
+                "Inviertes un poco de dinero",
+                "Ese dinero genera una ganancia",
+                "La ganancia se suma a tu dinero",
+                "Ahora tu ganancia también genera ganancia"
+              ],
+              "explicacion": "Cada vuelta la bola es más grande. Eso es componer."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "texto": "No es personal, es interés compuesto. 😎",
+              "resumen": [
+                "Interés compuesto = ganancias sobre ganancias",
+                "El tiempo lo potencia como una bola de nieve",
+                "Empezar temprano > empezar con mucho"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "U1",
+      "titulo": "Reglas de oro",
+      "subtitulo": "La disciplina que te hace ganar",
+      "color": "#3f6b8f",
+      "mascota": "colmillo",
+      "lessons": [
+        {
+          "id": "U1-L1",
+          "titulo": "Poco + constante + tiempo",
+          "icono": "medal",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "La fórmula de Colmillo",
+              "texto": "No necesitas ser rico ni un genio. Necesitas <b>poco dinero, muy seguido, durante mucho tiempo</b>. Aburrido y constante le gana al brillante y apurado."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "colmillo",
+              "afirmacion": "Es mejor invertir un poco cada mes que esperar a tener mucho de golpe.",
+              "esVerdadero": true,
+              "explicacion": "Aportar seguido (poco y constante) aprovecha el tiempo y suaviza los precios. Se llama aporte periódico."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "colmillo",
+              "pregunta": "Cuando el mercado cae fuerte, el inversor paciente…",
+              "pista": "¿Qué haría Colmillo?",
+              "opciones": [
+                "Mantiene la calma y sigue su plan",
+                "Vende todo asustado",
+                "Mete todos sus ahorros de golpe"
+              ],
+              "correcta": 0,
+              "explicacion": "Vender en pánico es el error más caro. Las caídas son normales; el paciente no se mueve."
+            },
+            {
+              "tipo": "accion",
+              "mascota": "colmillo",
+              "titulo": "Tu primer hábito",
+              "texto": "Antes de invertir un peso, crea el hábito. Esta es tu misión de hoy:",
+              "pasos": [
+                "Elige un día fijo del mes para 'revisar y aportar'",
+                "Ponte un recordatorio en el teléfono ese día",
+                "Decide un monto pequeño que no te duela (ej. lo de un café por semana)"
+              ],
+              "aviso": "Educación, no asesoría. Colmillo te enseña el método; las decisiones son tuyas."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "resumen": [
+                "Poco + constante + mucho tiempo",
+                "No vender en pánico cuando cae",
+                "El hábito vale más que el monto"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U1-L2",
+          "titulo": "No vender en pánico",
+          "icono": "meditation",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "Tranquilo, campeón",
+              "texto": "El mercado sube y baja. Siempre. Una caída de -20% en el camino <b>es normal</b>, no es el fin del mundo. Lo que arruina a la gente no es la caída: es vender justo ahí."
+            },
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "texto": "Cuando vendes en pánico, conviertes una <b>pérdida en papel</b> (que se puede recuperar) en una <b>pérdida real</b> (que ya no vuelve). El que se apura, pierde."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "colmillo",
+              "afirmacion": "Si tu inversión baja de precio, ya perdiste esa plata para siempre.",
+              "esVerdadero": false,
+              "explicacion": "Solo pierdes de verdad cuando VENDES. Mientras no vendas, es una baja temporal en el papel."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "colmillo",
+              "pregunta": "El mercado cae -15% en un mes. ¿Qué hace Colmillo?",
+              "opciones": [
+                "Sigue su plan de aportes, sin drama",
+                "Vende todo para 'salvar' lo que queda",
+                "Deja de mirar la app para siempre"
+              ],
+              "correcta": 0,
+              "explicacion": "El plan no cambia porque el precio se moleste un rato. Esa es la disciplina que separa a los que ganan."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "texto": "No es personal, es el mercado. Respira y sigue.",
+              "resumen": [
+                "Las caídas son normales, no el fin del mundo",
+                "Solo pierdes de verdad si vendes en la baja",
+                "El plan no cambia por el miedo del momento"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U1-L3",
+          "titulo": "Empezar temprano",
+          "icono": "clock",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "titulo": "El costo de esperar",
+              "texto": "Dos personas invierten lo mismo por mes. Una empieza a los 25, otra a los 35. La que empezó 10 años antes termina con <b>casi el doble</b>, aunque haya aportado menos en total."
+            },
+            {
+              "tipo": "calc",
+              "mascota": "lauta",
+              "texto": "Prueba tú mismo: mueve los años y mira cómo cambia el resultado final.",
+              "calc": {
+                "aporte": 30,
+                "anios": 15,
+                "tasa": 8,
+                "periodo": "semana"
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "lauta",
+              "pregunta": "¿Por qué importa tanto empezar temprano?",
+              "opciones": [
+                "Porque el interés compuesto necesita tiempo para hacer su magia",
+                "Porque los precios siempre suben al principio del año",
+                "Porque las plataformas cobran más a los que empiezan tarde"
+              ],
+              "correcta": 0,
+              "explicacion": "El tiempo es el ingrediente que no se compra con más dinero. Por eso 'hoy' siempre es mejor que 'mañana'."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "lauta",
+              "resumen": [
+                "Empezar 10 años antes puede casi duplicar el resultado",
+                "El tiempo invertido pesa más que el monto",
+                "El mejor día para empezar fue ayer; el segundo mejor es hoy"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U1-L4",
+          "titulo": "Cuánto y cómo, según tú",
+          "icono": "scale",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "No todos invertimos igual",
+              "texto": "Un chico de 17 y una persona de 50 <b>no</b> deberían invertir igual — ni el mismo monto, ni con el mismo riesgo. ¿De qué depende? Sobre todo de una cosa: cuánto <b>tiempo</b> tienes por delante."
+            },
+            {
+              "tipo": "etapa",
+              "mascota": "colmillo"
+            },
+            {
+              "tipo": "calc",
+              "mascota": "colmillo",
+              "personalizar": true,
+              "texto": "Mira cuánto podrías juntar a tu ritmo, con los años que tú tienes por delante:"
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "colmillo",
+              "pregunta": "¿De qué depende, sobre todo, cuánto riesgo puedes permitirte?",
+              "opciones": [
+                "De cuánto tiempo tienes por delante (tu horizonte)",
+                "De la suerte que tengas ese año",
+                "De lo que estén haciendo tus amigos"
+              ],
+              "correcta": 0,
+              "explicacion": "Mientras más años por delante, más puedes aguantar las caídas — porque tienes tiempo de sobra para recuperarte. Por eso el joven arriesga más y el mayor cuida más."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "resumen": [
+                "No hay una receta única: depende de tu etapa",
+                "Más años por delante = puedes aguantar más caídas",
+                "El monto se ajusta a TU vida, no a una regla igual para todos"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "U2",
+      "titulo": "Vocabulario",
+      "subtitulo": "Las palabras que necesitas",
+      "color": "#a9824f",
+      "mascota": "lauta",
+      "lessons": [
+        {
+          "id": "U2-L1",
+          "titulo": "Acción e índice",
+          "icono": "book",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "titulo": "Una acción",
+              "texto": "Una <b>acción</b> es un pedacito de una empresa real. Si compras una acción de una cadena de cafeterías, eres dueño de un trocito diminuto de esa empresa."
+            },
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "texto": "Un <b>índice</b> (como el S&P 500) no es una empresa: es una <b>canasta</b> con las 500 empresas más grandes de EEUU juntas. Comprarlo es comprar un pedacito de las 500 a la vez."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "lauta",
+              "pregunta": "¿Qué es más arriesgado?",
+              "opciones": [
+                "Comprar la acción de una sola empresa",
+                "Comprar un índice con 500 empresas",
+                "Ambos son igual de arriesgados"
+              ],
+              "correcta": 0,
+              "explicacion": "Si esa empresa quiebra, pierdes todo. Si una de las 500 quiebra, el índice apenas lo nota."
+            },
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "texto": "Un <b>ETF</b> es simplemente el 'envase' con el que compras un índice en el mercado — como comprar la canasta entera en un solo clic."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "lauta",
+              "afirmacion": "Para el 90% de las personas, comprar el índice es más sensato que elegir empresas una por una.",
+              "esVerdadero": true,
+              "explicacion": "Adivinar qué empresa 'va a explotar' es casi imposible de acertar seguido. Diversificar con el índice reduce ese riesgo."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "lauta",
+              "resumen": [
+                "Acción = pedacito de una empresa",
+                "Índice = canasta con muchas empresas juntas",
+                "ETF = el envase para comprar un índice fácil"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U2-L2",
+          "titulo": "Cómo ganas de verdad",
+          "icono": "cash",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "titulo": "Dos formas de ganar",
+              "texto": "Ganas de dos maneras: (1) el <b>precio sube</b> con el tiempo, y (2) algunas empresas reparten <b>dividendos</b> — una parte de sus ganancias, directo a ti, solo por ser dueño."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "lauta",
+              "pregunta": "¿Cómo se llama el pago que algunas empresas te dan por ser dueño de una acción?",
+              "opciones": [
+                "Dividendo",
+                "Interés",
+                "Comisión"
+              ],
+              "correcta": 0,
+              "explicacion": "Ojo: NO es 'interés' (eso lo pagan los bonos, que son un préstamo). El dividendo es tu parte de las ganancias de la empresa."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "lauta",
+              "afirmacion": "Las acciones pagan 'interés' como una cuenta de ahorro.",
+              "esVerdadero": false,
+              "explicacion": "Confundir dividendo con interés es un error común. El interés lo pagan los bonos; el dividendo, las empresas."
+            },
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "texto": "También existen el <b>oro</b> y los <b>bonos</b>: no son empresas, son otras formas de guardar valor. El oro protege en crisis; los bonos son préstamos que devuelven interés fijo. Ninguno crece tanto como las acciones a largo plazo."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "lauta",
+              "resumen": [
+                "Ganas por el precio que sube + por dividendos",
+                "Dividendo ≠ interés (eso es de los bonos)",
+                "Oro y bonos son otras herramientas, no las principales"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "U3",
+      "titulo": "Manos a la obra",
+      "subtitulo": "Acciones reales: abre tu cuenta",
+      "color": "#c07a2b",
+      "mascota": "colmillo",
+      "lessons": [
+        {
+          "id": "U3-L1",
+          "titulo": "Elige tu plataforma",
+          "icono": "compass",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "Es hora, campeón",
+              "texto": "Toda la teoría vale poco sin acción. Ahora vas a elegir <b>dónde</b> vas a invertir de verdad. No hay una única respuesta correcta: depende de tu país."
+            },
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "texto": "Hay plataformas 100% automáticas (tú eliges perfil y listo), y otras donde compras el índice tú mismo. Ambas sirven — la mejor es la que realmente vas a usar."
+            },
+            {
+              "tipo": "guia-plataformas"
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "colmillo",
+              "pregunta": "¿Cuál de estas es la opción más 100% automática, donde tú no eliges nada?",
+              "opciones": [
+                "Una cartera gestionada por perfil de riesgo",
+                "Comprar acciones sueltas eligiendo tú cada una",
+                "Guardar el dinero sin invertir"
+              ],
+              "correcta": 0,
+              "explicacion": "Las carteras gestionadas (como las que viste en la guía) arman la mezcla por ti — es la opción más 'hazlo por mí'."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "texto": "Ya sabes elegir. Siguiente: abrir la cuenta.",
+              "resumen": [
+                "Revisa la guía completa antes de decidir — no hay una única correcta",
+                "Automática (hazlo por mí) o manual (elijo yo)",
+                "La mejor es la que de verdad vas a usar"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U3-L2",
+          "titulo": "Abre tu cuenta",
+          "icono": "unlock",
+          "xp": 25,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "Nivel jefe",
+              "texto": "Te van a pedir una foto de tu cédula y una selfie. No te asustes: es el proceso <b>KYC</b> (conocer a tu cliente), obligatorio en todas las plataformas reguladas. Es buena señal, no mala."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "colmillo",
+              "afirmacion": "Que te pidan foto de cédula y selfie es una señal de que la plataforma es riesgosa o poco confiable.",
+              "esVerdadero": false,
+              "explicacion": "Al revés: es una señal de que está REGULADA y sigue leyes anti-lavado de dinero. Desconfía más de la que NO te pide nada."
+            },
+            {
+              "tipo": "accion",
+              "mascota": "colmillo",
+              "titulo": "Abre tu cuenta ahora",
+              "texto": "Con la plataforma que elegiste en la lección anterior, completa el registro real:",
+              "pasos": [
+                "Descarga la app o entra al sitio de tu plataforma elegida",
+                "Completa tus datos personales",
+                "Sube tu foto de cédula y haz la selfie de verificación",
+                "Espera la confirmación (puede tardar de minutos a 1-2 días)"
+              ],
+              "aviso": "Colmillo no recibe ni gestiona tu dinero en ningún momento. Tú abres la cuenta directo con la plataforma regulada."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "texto": "Cuenta abierta. Ya casi eres inversor.",
+              "resumen": [
+                "El KYC (cédula + selfie) es una buena señal, no mala",
+                "El registro puede tardar minutos o días en aprobarse",
+                "Tú controlas tu cuenta directo con la plataforma"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U3-L3",
+          "titulo": "Tu primer índice",
+          "icono": "trophy",
+          "xp": 30,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "El gran momento",
+              "texto": "Con tu cuenta aprobada y algo de dinero adentro, vas a comprar tu primer índice. No necesitas mucho: algunas plataformas aceptan desde 1 dólar."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "colmillo",
+              "afirmacion": "Necesitas mucho dinero para empezar a invertir.",
+              "esVerdadero": false,
+              "explicacion": "Falso. Varias plataformas de este curso aceptan montos mínimos muy chicos. Lo importante es empezar, no el monto."
+            },
+            {
+              "tipo": "accion",
+              "mascota": "colmillo",
+              "titulo": "Compra tu primer índice",
+              "texto": "Este es el nivel jefe real. Hazlo con calma:",
+              "pasos": [
+                "Deposita un monto pequeño que no te duela",
+                "Busca el índice (ej. S&P 500) en tu plataforma",
+                "Compra la cantidad que puedas — no hay mínimo heroico",
+                "Guarda el comprobante o captura de pantalla"
+              ],
+              "aviso": "Esto es educación sobre CÓMO comprar un índice diversificado, no una recomendación personalizada de inversión."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "texto": "¡Lo hiciste! Ya no 'sabes' invertir: YA INVIERTES. 🎉",
+              "resumen": [
+                "Compraste tu primer índice de verdad",
+                "No hacía falta mucho dinero, solo empezar",
+                "A partir de ahora, tu plata trabaja para ti"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U3-L4",
+          "titulo": "Aporte automático",
+          "icono": "repeat",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "Ponlo en piloto automático",
+              "texto": "El siguiente paso es hacer que aportar sea automático, para que no dependa de tu memoria ni de tu ánimo del día."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "colmillo",
+              "pregunta": "¿Por qué conviene automatizar el aporte?",
+              "opciones": [
+                "Porque quita la decisión emocional de 'invierto o no invierto hoy'",
+                "Porque así ganas más rápido",
+                "Porque las plataformas lo exigen"
+              ],
+              "correcta": 0,
+              "explicacion": "El aporte automático convierte una decisión difícil (que dependía de tu voluntad) en un hábito sin fricción."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "colmillo",
+              "titulo": "Por qué automatizar (con calma, sin apuro)",
+              "intro": "No es obligatorio. Es información para que decidas con criterio propio — sin checklist que fingir.",
+              "secciones": [
+                {
+                  "titulo": "1. Quita la decisión emocional",
+                  "texto": "Cada mes que decides 'a mano' si invertir o no, tu ánimo del día decide por ti. El aporte automático saca esa decisión del medio: pasa, sin que dependa de si tuviste un buen o mal día."
+                },
+                {
+                  "titulo": "2. Aprovecha las caídas sin darte cuenta",
+                  "texto": "Si el aporte es automático, seguís comprando aunque el mercado esté bajo — que es, matemáticamente, el mejor momento para comprar más barato. A mano, el miedo te hace saltarte justo esos meses."
+                },
+                {
+                  "titulo": "3. Es reversible en cualquier momento",
+                  "texto": "Automatizar no es un compromiso de por vida. Cualquier plataforma te deja pausar, cambiar el monto o cancelar cuando quieras. El objetivo es quitarte fricción, no atarte."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Con vs. sin automatizar",
+                "texto": "María decide 'a mano' cada mes: en los meses buenos invierte $30.000, en los meses que el mercado bajó se pone nerviosa y no invierte nada. En un año invirtió solo 7 de 12 meses. Su hermano automatizó $20.000 mensuales fijos: invirtió los 12 meses, incluidas las bajas — terminó con más plata invertida y a mejor precio promedio."
+              }
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "resumen": [
+                "Automatizar quita la fricción emocional",
+                "Monto fijo pequeño + frecuencia regular",
+                "Ahora tu plan corre solo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U3-L5",
+          "titulo": "Cómo conseguir dólares para invertir",
+          "icono": "cash",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "Un paso extra, para quien lo necesita",
+              "texto": "Si tu plataforma pide dólares y tu banco local no te lo pone fácil (hola, Argentina), hay herramientas hechas justo para eso. No son brokers — son la forma de LLEVAR tu plata hasta el broker."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "colmillo",
+              "titulo": "Dos herramientas para dolarizar y fondear",
+              "secciones": [
+                {
+                  "titulo": "Wise — cuenta multi-moneda",
+                  "texto": "Te da una cuenta que mantiene más de 40 monedas y convierte al tipo de cambio real (sin el margen escondido que cobran los bancos tradicionales). Sirve para RECIBIR dólares o euros de afuera y luego enviarlos a tu broker (por ejemplo, a Interactive Brokers) con una comisión baja y transparente."
+                },
+                {
+                  "titulo": "Wallbit — cuenta en EE.UU. + tarjeta + inversión",
+                  "texto": "Te abre una cuenta bancaria real en Estados Unidos (con número de cuenta y routing number) desde Latam, con tarjeta Visa y una sección propia para invertir en acciones/ETFs. Fuerte en Argentina y México: convierte tus pesos a dólares dentro de la misma app."
+                },
+                {
+                  "titulo": "¿Y Karta?",
+                  "texto": "Vas a escuchar hablar de Karta — pero ojo: es una <b>tarjeta de crédito en dólares</b> para construir historial crediticio en EE.UU., NO una herramienta para invertir. Sirve para otra cosa completamente distinta; no la confundas con un broker."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Un caso típico (Argentina)",
+                "texto": "Valentina quiere invertir en Interactive Brokers, que pide fondeo en dólares. Abre una cuenta en Wallbit, convierte sus pesos a dólares ahí, y transfiere ese saldo a su cuenta de IBKR. Ese es el puente que le faltaba."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "colmillo",
+              "pregunta": "¿Para qué sirve principalmente Wise o Wallbit en este contexto?",
+              "opciones": [
+                "Como puente para conseguir/mover dólares hacia tu plataforma de inversión",
+                "Como reemplazo de tu plataforma de inversión",
+                "Como una tarjeta de crédito para construir historial"
+              ],
+              "correcta": 0,
+              "explicacion": "Son herramientas de dólares y fondeo, no brokers — te ayudan a LLEGAR a tu plataforma de inversión, no la reemplazan."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "colmillo",
+              "afirmacion": "Karta sirve para invertir en acciones, igual que Wallbit.",
+              "esVerdadero": false,
+              "explicacion": "Karta es una tarjeta de crédito en dólares para historial crediticio — una herramienta completamente distinta, no de inversión."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "resumen": [
+                "Wise y Wallbit son puentes de dólares, no brokers",
+                "Wallbit además tiene su propia sección de inversión",
+                "Karta es crédito USD, no inversión — no las confundas"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "U4",
+      "titulo": "Mantenerlo andando",
+      "subtitulo": "El largo plazo",
+      "color": "#2f7d78",
+      "mascota": "colmillo",
+      "lessons": [
+        {
+          "id": "U4-L1",
+          "titulo": "Míralo 1 vez al mes",
+          "icono": "calendar",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "Menos es más",
+              "texto": "Mirar tu inversión todos los días no te hace ganar más — solo te genera ansiedad. Una vez al mes es más que suficiente."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "colmillo",
+              "afirmacion": "Revisar tu inversión varias veces al día te ayuda a tomar mejores decisiones.",
+              "esVerdadero": false,
+              "explicacion": "Al revés: mirar seguido aumenta la tentación de reaccionar al ruido de corto plazo, no de pensar a largo plazo."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "colmillo",
+              "pregunta": "¿Cada cuánto recomienda Colmillo revisar tu cartera?",
+              "opciones": [
+                "Una vez al mes",
+                "Cada hora",
+                "Solo cuando baja mucho"
+              ],
+              "correcta": 0,
+              "explicacion": "Una revisión mensual te mantiene informado sin caer en el ruido diario del mercado."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "resumen": [
+                "Mirar todos los días no mejora tus resultados",
+                "Una revisión mensual alcanza y sobra",
+                "Menos ruido, más paciencia"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U4-L2",
+          "titulo": "Qué hacer cuando baja",
+          "icono": "trendDown",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "La pregunta del millón",
+              "texto": "Tu inversión bajó -10% este mes. ¿Qué haces? La respuesta corta: <b>nada</b>. Sigues tu aporte automático como si nada."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "colmillo",
+              "pregunta": "El índice bajó -12% este mes. ¿Qué hace un inversor con colmillo?",
+              "opciones": [
+                "Sigue aportando su monto normal, sin cambiar el plan",
+                "Vende todo antes de perder más",
+                "Deja de aportar hasta que 'se recupere'"
+              ],
+              "correcta": 0,
+              "explicacion": "Las caídas, con aportes constantes, en realidad te permiten comprar más barato. El plan no cambia por el humor del mercado."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "colmillo",
+              "afirmacion": "Cuando el mercado baja, comprar el mismo monto de siempre te da 'más cantidad' por el mismo dinero.",
+              "esVerdadero": true,
+              "explicacion": "Exacto — se llama promediar el costo. Comprar seguido, suba o baje, es parte de la estrategia, no un error."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "texto": "Cuando baja, no se apaga el plan. Se sigue el plan.",
+              "resumen": [
+                "Ante una baja, la respuesta correcta suele ser 'nada'",
+                "Aportar en la baja compra más barato",
+                "El plan no depende del humor del mercado"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U4-L3",
+          "titulo": "¿El mercado está caro? ¿Espero?",
+          "icono": "clock",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "cadete",
+              "titulo": "Soy Cadete, guardián anti-hype",
+              "texto": "Siempre hay una razón para esperar: \"el mercado está muy caro\", \"hay puras malas noticias\", \"mejor espero que baje\". Vamos a desarmar esa trampa."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "cadete",
+              "titulo": "Por qué \"esperar el momento perfecto\" es una trampa",
+              "secciones": [
+                {
+                  "titulo": "Las malas noticias son permanentes",
+                  "texto": "Guerra, inflación, elecciones, crisis... siempre hay alguna. El mercado <b>histórico</b> ha subido a pesar de eso — los expertos lo llaman 'trepar un muro de preocupación'. Si esperas a que no haya noticias malas, nunca vas a entrar."
+                },
+                {
+                  "titulo": "\"Está caro\" no significa que vaya a caer ya",
+                  "texto": "El mercado puede seguir subiendo (o quedarse caro) por años. Adivinar el techo exacto es casi imposible — hasta los profesionales fallan la mayoría de las veces intentándolo."
+                },
+                {
+                  "titulo": "El tiempo en el mercado le gana al momento perfecto",
+                  "texto": "Estudios repetidos muestran que quienes se quedan invertidos todo el tiempo superan a quienes intentan 'entrar y salir' en los momentos justos — porque los mejores días del mercado suelen llegar de sorpresa, pegados a los peores."
+                },
+                {
+                  "titulo": "La salida: DCA (aportar seguido, sin importar el precio)",
+                  "texto": "En vez de intentar adivinar el momento perfecto, aportas lo mismo cada mes pase lo que pase. Si está caro, compras menos cantidad; si está barato, compras más. Con el tiempo, se promedia."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Dos inversores, el mismo año difícil",
+                "texto": "El año tuvo guerra, inflación alta y un mercado que muchos llamaban \"carísimo\". Camila esperó \"a que se calmara\" y nunca entró. Tomás siguió aportando su monto fijo cada mes, pase lo que pase. Cinco años después, Tomás tiene una cartera creciendo; Camila sigue esperando el momento perfecto."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "cadete",
+              "pregunta": "El mercado está \"caro\" y hay puras malas noticias. ¿Qué hace el inversor con colmillo?",
+              "opciones": [
+                "Sigue su plan de aportes (DCA), sin intentar adivinar el momento perfecto",
+                "Espera a que las noticias sean todas buenas para entrar",
+                "Vende todo por si acaso"
+              ],
+              "correcta": 0,
+              "explicacion": "Las malas noticias son la norma, no la excepción. Esperar 'el momento perfecto' casi siempre significa no entrar nunca."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "cadete",
+              "afirmacion": "Los expertos que intentan adivinar el techo exacto del mercado le aciertan casi siempre.",
+              "esVerdadero": false,
+              "explicacion": "Hasta los profesionales fallan la mayoría de las veces intentando cronometrar el mercado. Por eso el DCA (aportar seguido) le gana al timing en el largo plazo."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "cadete",
+              "texto": "No esperes el momento perfecto. El tiempo en el mercado le gana al momento del mercado.",
+              "resumen": [
+                "Las malas noticias son permanentes — esperar a que desaparezcan es esperar para siempre",
+                "Nadie puede predecir el techo exacto de forma consistente",
+                "DCA (aportar seguido, pase lo que pase) le gana al intentar adivinar el momento perfecto"
+              ]
+            }
+          ]
+        }
+      ],
+      "opcional": true,
+      "etiqueta": "Recomendado"
+    },
+    {
+      "id": "U5",
+      "titulo": "Los maestros",
+      "subtitulo": "Buffett, Bogle y las lecciones",
+      "color": "#8a3a3a",
+      "mascota": "lauta",
+      "lessons": [
+        {
+          "id": "U5-L1",
+          "titulo": "Warren Buffett",
+          "icono": "topHat",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "maestro",
+              "maestro": "buffett",
+              "mascota": "lauta",
+              "nombre": "Warren Buffett",
+              "anios": "1930 · 95 años",
+              "rol": "\"El paciente\"",
+              "intro": "Te presento al inversor más famoso del mundo — y por qué su secreto es tan aburrido como poderoso.",
+              "bullets": [
+                "Construyó una de las mayores fortunas del planeta comprando buenas empresas y <b>no vendiéndolas</b> — a veces por décadas.",
+                "La mayor parte de su riqueza la generó <b>después de los 60 años</b>: es interés compuesto + tiempo en estado puro.",
+                "En enero de 2026, a los 95, se retiró como CEO de Berkshire Hathaway tras 60 años — y sigue como presidente.",
+                "Su regla nº1: nunca pierdas dinero. La nº2: nunca olvides la nº1."
+              ],
+              "cita": "El mercado es un mecanismo para transferir dinero de los impacientes a los pacientes."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "lauta",
+              "pregunta": "¿Cuál es la regla más famosa de Buffett sobre invertir?",
+              "opciones": [
+                "No pierdas dinero (y la regla número 2: no olvides la regla 1)",
+                "Compra y vende rápido para aprovechar cada movimiento",
+                "Invierte en lo que esté de moda ese mes"
+              ],
+              "correcta": 0,
+              "explicacion": "Buffett prioriza no perder por sobre ganar rápido. Cuidar el capital primero, crecer después."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "lauta",
+              "resumen": [
+                "Buffett = paciencia y tiempo, no genialidad de corto plazo",
+                "Prioriza no perder por sobre ganar rápido"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U5-L2",
+          "titulo": "John Bogle y el índice",
+          "icono": "cards",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "maestro",
+              "maestro": "bogle",
+              "mascota": "lauta",
+              "nombre": "John C. Bogle",
+              "anios": "1929 – 2019",
+              "rol": "\"El del índice\"",
+              "intro": "Este señor cambió la inversión para siempre — y lo hizo pensando en la gente común, no en los ricos.",
+              "bullets": [
+                "Creó el <b>primer fondo índice</b> para el público (1975): en vez de adivinar qué empresa ganará, compras todas a la vez.",
+                "Su obsesión eran las comisiones bajas: cada peso que no pagas de comisión queda trabajando para ti.",
+                "Demostró que casi ningún profesional le gana al índice de forma consistente a largo plazo.",
+                "Falleció en 2019, pero su invento le ahorró — y sigue ahorrando — miles de millones a inversores comunes."
+              ],
+              "cita": "No busques la aguja en el pajar. Simplemente compra todo el pajar."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "lauta",
+              "afirmacion": "Según Bogle, la mayoría de los inversores profesionales le ganan al índice de forma consistente en el largo plazo.",
+              "esVerdadero": false,
+              "explicacion": "Al revés: la mayoría de los profesionales NO le gana al índice de forma consistente. Por eso Bogle defendía comprar el índice."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "lauta",
+              "resumen": [
+                "Bogle popularizó comprar 'el mercado entero'",
+                "Casi nadie le gana al índice de forma consistente",
+                "Por eso el índice sigue siendo la base de este curso"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U5-L3",
+          "titulo": "The Big Short (con cuidado)",
+          "icono": "film",
+          "xp": 15,
+          "cards": [
+            {
+              "tipo": "maestro",
+              "maestro": "burry",
+              "mascota": "cadete",
+              "nombre": "Michael Burry",
+              "anios": "1971 · ~55 años",
+              "rol": "\"El apostador\"",
+              "intro": "Soy Cadete, guardián anti-hype. Este tipo ganó una fortuna… pero cuidado con querer copiar su jugada.",
+              "bullets": [
+                "Médico que se volvió inversor. Vio venir el colapso hipotecario de 2008 cuando casi nadie lo veía.",
+                "Apostó <b>enorme</b> contra el mercado — y casi quiebra antes de tener razón. Fue una apuesta única, no un método.",
+                "Christian Bale lo interpretó en 'The Big Short'. Se hizo famoso… pero replicar eso arruinó a mucha gente que lo intentó."
+              ],
+              "cita": "Tú no eres Burry. Tú eres el paciente. Esa es tu ventaja."
+            },
+            {
+              "tipo": "pelicula",
+              "mascota": "cadete",
+              "titulo": "The Big Short",
+              "anio": "2015",
+              "director": "Adam McKay",
+              "sinopsis": "La historia real de los pocos que apostaron contra las hipotecas basura antes de la crisis de 2008. Entretenida y muy educativa sobre cómo se gestan las crisis — pero recuerda: es una excepción histórica, no un manual.",
+              "trailer": "https://www.youtube.com/watch?v=vgqG3ITMv1Q",
+              "dondeVer": "https://www.justwatch.com/us/movie/the-big-short",
+              "texto": "Míratela — se disfruta y enseña un montón. Solo no salgas queriendo apostar contra todo."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "cadete",
+              "pregunta": "¿Cuál es la lección CORRECTA de esa historia para ti?",
+              "opciones": [
+                "Fue una apuesta única, extrema y muy riesgosa — tú eres el paciente, no el apostador",
+                "Deberías intentar detectar la próxima crisis y apostar en contra como él",
+                "El mercado siempre está a punto de colapsar"
+              ],
+              "correcta": 0,
+              "explicacion": "Burry apostó todo, contra la corriente, en una situación única — y casi pierde todo antes de acertar. No es un método replicable; es una excepción histórica."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "cadete",
+              "afirmacion": "Intentar 'ser el próximo Burry' es una buena estrategia para un inversor principiante.",
+              "esVerdadero": false,
+              "explicacion": "No seas Burry: él apostó contra el mercado en un evento único. Tú construyes riqueza siendo paciente, no apostando en contra."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "cadete",
+              "texto": "Disfruta la película. No copies la apuesta.",
+              "resumen": [
+                "Fue una excepción histórica, no un método",
+                "Tú ganas siendo paciente, no apostando contra todo",
+                "Cuidado con las lecciones equivocadas de Hollywood"
+              ]
+            }
+          ]
+        }
+      ],
+      "opcional": true,
+      "etiqueta": "Avanzado"
+    },
+    {
+      "id": "U6",
+      "titulo": "Nivel Don",
+      "subtitulo": "Avanzado (opcional)",
+      "color": "#d4af37",
+      "mascota": "lauta",
+      "lessons": [
+        {
+          "id": "U6-L1",
+          "titulo": "Qué son los earnings",
+          "icono": "barChart",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "titulo": "El boletín de notas de una empresa",
+              "texto": "Cada 3 meses, las empresas publican sus <b>earnings</b> (resultados): cuánto vendieron, cuánto ganaron. Es como un boletín de notas trimestral."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "lauta",
+              "titulo": "Cómo buscar y leer una empresa, paso a paso",
+              "intro": "Antes de leer un reporte, hay que saber dónde buscarlo. Esto es lo que hace cualquier analista, en simple.",
+              "secciones": [
+                {
+                  "titulo": "1. Empieza por lo que ya conoces",
+                  "texto": "La mejor forma de encontrar empresas para investigar no es un ranking random: es mirar productos y marcas que ya usas o ves crecer a tu alrededor. Ahí ya tienes ventaja: entiendes el negocio."
+                },
+                {
+                  "titulo": "2. Herramientas gratis para buscar",
+                  "texto": "Yahoo Finance o Google Finance te dan el resumen básico (precio, tamaño de la empresa, resultados) sin pagar nada. Para ver 'quién más es dueño', los ETFs de índice publican qué empresas tienen adentro — es una forma gratis de ver qué está de moda."
+                },
+                {
+                  "titulo": "3. La fuente real: 'Relación con Inversionistas'",
+                  "texto": "Toda empresa que cotiza en bolsa tiene una sección 'Investor Relations' en su propio sitio web, con los reportes oficiales. Ahí está la fuente primaria — sin que nadie te la resuma ni te la venda."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Leyendo un reporte real (ejemplo ilustrativo)",
+                "texto": "\"Café Andino S.A.\" reporta: ventas +12% vs. el año pasado, ganancia por acción de $2,40 (esperaban $2,20 — le fue mejor de lo previsto), y anuncia que espera seguir creciendo el próximo trimestre. Esas 3 cifras — ventas, ganancia por acción vs. lo esperado, y la proyección futura — son el corazón de cualquier reporte, sin importar el rubro."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "lauta",
+              "pregunta": "¿Cada cuánto publica earnings una empresa que cotiza en bolsa?",
+              "opciones": [
+                "Cada 3 meses (trimestral)",
+                "Una vez al año",
+                "Cada semana"
+              ],
+              "correcta": 0,
+              "explicacion": "El reporte trimestral es el ritmo estándar. Es un buen momento para leer, no para reaccionar de golpe."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "lauta",
+              "resumen": [
+                "Earnings = reporte de resultados cada 3 meses",
+                "Sirve para leer la salud del negocio, no para operar por impulso"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U6-L2",
+          "titulo": "Tu analista de IA gratis",
+          "icono": "book",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "titulo": "Un analista gratis, siempre disponible",
+              "texto": "Herramientas como ChatGPT, Gemini, Claude o Perplexity tienen versiones gratuitas que pueden ayudarte a INVESTIGAR — como tener un profesor paciente disponible 24/7. Te enseño a usarlas bien."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "lauta",
+              "titulo": "Qué es un prompt (y cómo armar uno bueno)",
+              "secciones": [
+                {
+                  "titulo": "Un prompt es tu pedido a la IA",
+                  "texto": "Así como le preguntas mal o bien a un profesor, un prompt vago te da una respuesta vaga. La diferencia entre un buen y un mal resultado está casi siempre en CÓMO preguntas, no en qué tan 'inteligente' es la herramienta."
+                },
+                {
+                  "titulo": "La receta de 4 partes",
+                  "texto": "<b>Rol</b> (quién quieres que actúe: 'actúa como profesor de finanzas') + <b>contexto</b> (qué sabes/qué nivel tienes) + <b>pedido específico</b> (qué necesitas exactamente) + <b>formato</b> (cómo lo quieres: simple, con ejemplos, en una lista). Las 4 juntas dan resultados mucho mejores que una pregunta suelta."
+                },
+                {
+                  "titulo": "Herramientas gratuitas que puedes usar hoy",
+                  "texto": "ChatGPT (versión gratis), Gemini de Google, Claude, Perplexity (busca fuentes reales mientras responde). No necesitas pagar nada para empezar a investigar mejor."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Prompt flojo vs. prompt bueno",
+                "texto": "Flojo: \"háblame de Apple\" → respuesta genérica y larga. Bueno: \"Actúa como profesor de finanzas. Explícame en 3 puntos simples qué hace Apple como empresa y por qué es grande, sin tecnicismos, como si tuviera 15 años.\" → respuesta clara, corta, útil."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "lauta",
+              "pregunta": "¿Cuál de estos prompts está mejor armado?",
+              "opciones": [
+                "\"Actúa como profesor de finanzas. Explícame en simple qué es un dividendo, con un ejemplo numérico.\"",
+                "\"Dividendos\"",
+                "\"Dime todo sobre inversión\""
+              ],
+              "correcta": 0,
+              "explicacion": "Tiene rol (profesor), pedido específico (qué es un dividendo) y formato (simple + ejemplo numérico) — las 3 partes que hacen que la respuesta sea realmente útil."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "lauta",
+              "resumen": [
+                "Un buen prompt = rol + contexto + pedido específico + formato",
+                "Hay herramientas de IA gratuitas y suficientes para empezar",
+                "Cómo preguntas importa tanto como qué preguntas"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U6-L3",
+          "titulo": "Investigar una empresa con IA",
+          "icono": "barChart",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "titulo": "De la teoría a la práctica",
+              "texto": "¿Recuerdas cómo leer earnings (unidad anterior)? Ahora te doy prompts LISTOS para copiar y pegar, que te ayudan a entender el reporte de cualquier empresa."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "lauta",
+              "titulo": "3 prompts para copiar y usar",
+              "secciones": [
+                {
+                  "titulo": "Para entender los últimos resultados",
+                  "texto": "\"Actúa como profesor de finanzas. Explícame en palabras simples los últimos resultados de [EMPRESA]: ¿vendió más que antes?, ¿ganó dinero?, ¿qué dijo del futuro? Sin tecnicismos.\""
+                },
+                {
+                  "titulo": "Para evaluar si es una empresa sana",
+                  "texto": "\"Dame 5 señales simples de que una empresa es financieramente sana, con un ejemplo de cada una para que pueda reconocerlas yo mismo.\""
+                },
+                {
+                  "titulo": "Para no quedarte con dudas",
+                  "texto": "Si algo no te queda claro, sigue preguntando: \"No entendí [concepto], explícamelo con una analogía de la vida diaria.\" Repreguntar no es fracasar, es aprender bien."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "El paso final: siempre verifica",
+                "texto": "La IA te AYUDA A ENTENDER, pero la fuente real sigue siendo la página de 'Investor Relations' de la empresa (la que viste en U6-L1). Usa la IA para traducir el lenguaje difícil — no como reemplazo de la fuente oficial."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "lauta",
+              "pregunta": "Usaste un prompt para entender los resultados de una empresa. ¿Cuál es el siguiente paso correcto?",
+              "opciones": [
+                "Contrastarlo con la fuente oficial (Investor Relations) antes de sacar conclusiones",
+                "Tomar la respuesta de la IA como verdad absoluta sin revisar nada más",
+                "Comprar la acción de inmediato"
+              ],
+              "correcta": 0,
+              "explicacion": "La IA traduce y explica, pero puede equivocarse. La fuente primaria sigue siendo la referencia final."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "lauta",
+              "resumen": [
+                "Tienes 3 prompts listos para investigar cualquier empresa",
+                "Repreguntar hasta entender es parte de aprender bien",
+                "La IA traduce; la fuente oficial confirma"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U6-L4",
+          "titulo": "Los límites: la IA no es un oráculo",
+          "icono": "lock",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "cadete",
+              "titulo": "Soy Cadete, guardián anti-hype",
+              "texto": "La IA es una gran herramienta para ENTENDER. Pero tiene límites serios que tienes que conocer antes de confiar en ella."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "cadete",
+              "titulo": "Lo que la IA NO puede hacer por ti",
+              "secciones": [
+                {
+                  "titulo": "Puede \"alucinar\" (inventar con seguridad)",
+                  "texto": "A veces una IA da una respuesta que suena muy segura... pero es incorrecta o inventada. No tiene forma de saber que se equivocó. Por eso siempre hay que contrastar con la fuente real."
+                },
+                {
+                  "titulo": "Puede estar desactualizada",
+                  "texto": "Su conocimiento tiene una fecha de corte. Para datos de HOY (precio, noticias del día), necesitas fuentes en vivo, no solo la IA conversacional."
+                },
+                {
+                  "titulo": "No tiene bola de cristal",
+                  "texto": "Ninguna IA puede predecir con certeza si una acción va a subir o bajar mañana. Si te da una respuesta segura sobre el futuro del precio, desconfía — nadie lo sabe, ni siquiera la IA."
+                },
+                {
+                  "titulo": "La regla de oro: nunca le preguntes \"¿qué compro?\"",
+                  "texto": "Usa la IA para ENTENDER conceptos, traducir reportes, y aprender — nunca para que decida por ti qué comprar. Esa decisión, y su responsabilidad, siempre es tuya."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Pregunta correcta vs. pregunta peligrosa",
+                "texto": "Correcta: \"Explícame qué significa que una empresa tenga mucha deuda, con un ejemplo simple.\" Peligrosa: \"¿Debería comprar esta acción ahora?\" — la primera te hace más capaz; la segunda te vuelve dependiente de una respuesta que puede estar mal."
+              }
+            },
+            {
+              "tipo": "vf",
+              "mascota": "cadete",
+              "afirmacion": "Si una IA te da una respuesta seguridad sobre si una acción va a subir, puedes confiar en ella.",
+              "esVerdadero": false,
+              "explicacion": "Ninguna herramienta puede predecir el futuro del precio con certeza. Una respuesta \"segura\" sobre eso es una señal de alerta, no de confianza."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "cadete",
+              "pregunta": "¿Cuál es el uso correcto de la IA en tu proceso de inversión?",
+              "opciones": [
+                "Como asistente para entender e investigar — nunca para que decida por ti",
+                "Como oráculo que te dice exactamente qué comprar",
+                "Como reemplazo total de pensar por ti mismo"
+              ],
+              "correcta": 0,
+              "explicacion": "La IA amplifica tu capacidad de entender — no reemplaza tu criterio ni tu responsabilidad en la decisión final."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "cadete",
+              "resumen": [
+                "La IA puede alucinar (inventar con seguridad) — verifica siempre",
+                "Puede estar desactualizada para datos de hoy",
+                "Nunca le preguntes \"¿qué compro?\" — solo para entender"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U6-L5",
+          "titulo": "Empresa sana (founder-led)",
+          "icono": "landmark",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "titulo": "Leer más allá del precio",
+              "texto": "Una señal que muchos inversores serios valoran: empresas donde el <b>fundador sigue al mando</b> (founder-led). Suelen pensar en años, no en trimestres."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "lauta",
+              "titulo": "Cómo detectar una empresa 'founder-led'",
+              "secciones": [
+                {
+                  "titulo": "1. Busca 'Nuestro equipo' o 'Liderazgo'",
+                  "texto": "En la web de la empresa (o en su página de Wikipedia), busca la sección de liderazgo. Si el fundador sigue siendo CEO o tiene un cargo ejecutivo activo, es una señal de continuidad de visión."
+                },
+                {
+                  "titulo": "2. Mira si el fundador tiene acciones propias",
+                  "texto": "Los reportes anuales suelen listar cuánto porcentaje de la empresa es dueño el equipo directivo. Si el fundador tiene una parte relevante, sus intereses están más alineados con los tuyos como accionista."
+                },
+                {
+                  "titulo": "3. No es una regla absoluta",
+                  "texto": "Founder-led es una señal a favor, no una garantía. Hay empresas excelentes sin su fundador, y fundadores que toman malas decisiones. Es un dato más, no el único."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Comparando dos casos (ilustrativo)",
+                "texto": "\"Norte Tech\" — el fundador sigue como CEO 15 años después, con 8% de las acciones a su nombre. \"Sur Retail\" — el fundador se fue hace 5 años y hoy no tiene acciones. Ninguna de las dos es automáticamente 'mejor': pero Norte Tech tiene una señal extra de alineación que Sur Retail no tiene."
+              }
+            },
+            {
+              "tipo": "vf",
+              "mascota": "lauta",
+              "afirmacion": "El precio de una acción sube y baja siempre reflejando perfectamente qué tan sana está la empresa.",
+              "esVerdadero": false,
+              "explicacion": "El precio también refleja emociones y ruido de corto plazo. Por eso mirar los fundamentos del negocio importa, no solo el precio del día."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "lauta",
+              "resumen": [
+                "Founder-led = una señal de visión de largo plazo",
+                "El precio del día no siempre refleja la salud real"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U6-L6",
+          "titulo": "Diversificar: la estrategia barbell",
+          "icono": "scale",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "titulo": "La barra con pesas en las puntas",
+              "texto": "La estrategia <b>barbell</b>: la mayoría de tu dinero en el índice (seguro y aburrido), y una porción chica en 'satélites' — empresas puntuales que investigaste con más profundidad."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "lauta",
+              "titulo": "Armando tu propio barbell, con números",
+              "secciones": [
+                {
+                  "titulo": "1. Define primero el tamaño del satélite",
+                  "texto": "Antes de elegir QUÉ empresas van en el satélite, decide QUÉ PORCENTAJE del total le vas a dedicar. Una guía común: 80-90% índice, 10-20% satélites — nunca al revés."
+                },
+                {
+                  "titulo": "2. Reparte el satélite en 2-3 ideas, no en una sola",
+                  "texto": "Si el satélite completo va a una sola empresa, no diversificaste nada — solo moviste el riesgo de lugar. Repartir entre 2-3 ideas distintas reduce el golpe si una de ellas falla."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Ejemplo con $1.000",
+                "texto": "De $1.000 totales: $850 van al índice (85%, la base). Los $150 restantes (15%) se reparten en 2 empresas puntuales que investigaste con más profundidad — $75 en cada una. Si una de esas dos empresas cae fuerte, tu cartera completa apenas lo siente, porque nunca fue más del 7,5% del total."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "lauta",
+              "pregunta": "En una estrategia barbell, ¿dónde va la MAYOR parte de tu dinero?",
+              "opciones": [
+                "En el índice diversificado (la base sólida)",
+                "En una sola empresa que 'te late'",
+                "En efectivo, sin invertir"
+              ],
+              "correcta": 0,
+              "explicacion": "El índice es la base grande y estable. Los 'satélites' son solo una porción chica, nunca el centro de la estrategia."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "lauta",
+              "texto": "Nivel Don completado. Ya piensas como inversor de verdad.",
+              "resumen": [
+                "Barbell = base grande en el índice + satélites chicos",
+                "El satélite nunca reemplaza la base",
+                "Diversificar sigue siendo la regla de oro, incluso en modo avanzado"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U6-L7",
+          "titulo": "Investigar tu satélite con IA (y macro)",
+          "icono": "compass",
+          "xp": 25,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "lauta",
+              "titulo": "El proceso completo, con la cabeza fría",
+              "texto": "Ya sabes armar un barbell: índice grande + satélites chicos. Ahora te muestro cómo investigar una idea de satélite usando IA y contexto macro — con las reglas claras."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "lauta",
+              "titulo": "El proceso, paso a paso",
+              "secciones": [
+                {
+                  "titulo": "1. La idea nace de lo que conoces",
+                  "texto": "Un sector que sigues, una empresa cuyo producto usas, algo que leíste en las noticias. No de un ranking al azar."
+                },
+                {
+                  "titulo": "2. Investigas con IA (prompts de la lección anterior)",
+                  "texto": "Le pides que te explique el negocio, los últimos resultados, y el contexto macro que la afecta: \"Explícame cómo el nivel de tasas de interés afecta típicamente a empresas de [sector], en simple.\""
+                },
+                {
+                  "titulo": "3. Contrastas con la fuente primaria",
+                  "texto": "Nunca te quedas solo con lo que dijo la IA — vas a Investor Relations o a una fuente de datos real para confirmar los números."
+                },
+                {
+                  "titulo": "4. Le asignas SOLO el tamaño del satélite",
+                  "texto": "Por más que la idea te entusiasme, el barbell manda: 10-20% del total, repartido en 2-3 ideas. Nunca se convierte en el centro de tu plan."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Cómo se ve en la práctica",
+                "texto": "Encontraste una empresa de energía que te interesa. Le preguntas a la IA sobre el negocio y cómo la afecta el precio del petróleo (macro). Confirmas los datos en su reporte oficial. Decides destinarle un 5% de tu cartera total — dentro de tu satélite del 15%, junto a otra idea distinta."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "cadete",
+              "pregunta": "Investigaste una empresa con IA y te entusiasma mucho. ¿Qué hace el inversor con colmillo?",
+              "opciones": [
+                "Le asigna solo el tamaño chico del satélite (barbell), nunca reemplaza su base de índice",
+                "Mueve todo su dinero del índice a esa empresa porque 'esta vez es distinto'",
+                "La compra sin contrastar nada, confiando 100% en la IA"
+              ],
+              "correcta": 0,
+              "explicacion": "El entusiasmo por una idea nunca cambia la regla del barbell: el índice sigue siendo la base. La IA investiga, tú decides el tamaño con disciplina."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "cadete",
+              "texto": "La IA te hace más capaz de investigar. La disciplina del barbell te protege de ti mismo.",
+              "resumen": [
+                "El proceso: idea → investigar con IA → contrastar fuente primaria → tamaño chico del satélite",
+                "El macro (tasas, sector) es contexto para entender, no para apostar",
+                "El satélite nunca reemplaza el índice — sigue siendo el 10-20%, no el centro"
+              ]
+            }
+          ]
+        }
+      ],
+      "opcional": true,
+      "etiqueta": "Avanzado"
+    },
+    {
+      "id": "U7",
+      "titulo": "Tu centro de control",
+      "subtitulo": "Graduación: el Panel",
+      "color": "#2a6f7a",
+      "mascota": "bauti",
+      "lessons": [
+        {
+          "id": "U7-L1",
+          "titulo": "Conoce a Bauti",
+          "icono": "dashboard",
+          "xp": 25,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "bauti",
+              "titulo": "Soy Bauti, tu analista de datos",
+              "texto": "Llegaste hasta acá: ya tienes tu primer índice comprado y el hábito armado. Ahora te presento tu <b>Panel</b> — el lugar donde vas a seguir tus inversiones de verdad, con datos en vivo."
+            },
+            {
+              "tipo": "intro",
+              "mascota": "bauti",
+              "texto": "En el Panel puedes agregar las empresas que te interesan, leer noticias relevantes, y ver análisis — todo en un solo lugar, sin depender de veinte apps distintas."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "bauti",
+              "pregunta": "¿Para qué sirve principalmente el Panel?",
+              "opciones": [
+                "Para seguir y organizar tus inversiones reales en un solo lugar",
+                "Para recibir recomendaciones automáticas de qué comprar",
+                "Para reemplazar tu plataforma de inversión"
+              ],
+              "correcta": 0,
+              "explicacion": "El Panel es tu centro de seguimiento, no un asesor que te dice qué comprar. Las decisiones siguen siendo tuyas."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "bauti",
+              "resumen": [
+                "El Panel es tu centro de control post-graduación",
+                "Sirve para seguir, no para decirte qué comprar",
+                "Bauti te acompaña con datos, no con órdenes"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U7-L2",
+          "titulo": "El termómetro del mercado",
+          "icono": "activity",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "bauti",
+              "titulo": "Antes de mirar una empresa...",
+              "texto": "...conviene saber el 'clima' general del mercado. Tu Panel te lo resume con 3 termómetros. Te los traduzco."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "bauti",
+              "titulo": "Los 3 termómetros de tu Panel",
+              "secciones": [
+                {
+                  "titulo": "Fear & Greed (Miedo y Codicia)",
+                  "texto": "Un número de 0 a 100 que mide el ÁNIMO del mercado: cerca de 0 = <b>miedo extremo</b> (la gente vende asustada), cerca de 100 = <b>codicia extrema</b> (la gente compra eufórica). Los extremos suelen marcar exageraciones — no una señal para actuar solo."
+                },
+                {
+                  "titulo": "VIX (\"el índice del miedo\")",
+                  "texto": "Mide cuánto movimiento espera el mercado para los próximos días. VIX bajo = calma; VIX alto = se espera turbulencia. No predice la dirección, solo la intensidad esperada."
+                },
+                {
+                  "titulo": "Régimen / temperatura",
+                  "texto": "Tu Panel resume todo esto en UNA palabra (ej. 'neutro', 'defensivo', 'alcista') para que no tengas que mirar diez números — es el resumen del clima, no una orden de compra o venta."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Lo que vería Bautista hoy",
+                "texto": "Fear & Greed en 23 (\"Extreme Fear\") + VIX en 15,2 + régimen \"neutro\". Traducido: hay miedo en el ánimo general, pero la volatilidad esperada es moderada. Es CONTEXTO — Bautista no compra ni vende solo por ver ese número."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "bauti",
+              "pregunta": "El Fear & Greed marca 15 (\"miedo extremo\"). ¿Qué es lo correcto?",
+              "opciones": [
+                "Es contexto sobre el ánimo del mercado, no una orden de compra o venta",
+                "Hay que vender todo inmediatamente",
+                "Hay que comprar todo inmediatamente"
+              ],
+              "correcta": 0,
+              "explicacion": "Los extremos de miedo o codicia son información sobre el ánimo colectivo — señal de contexto, nunca una instrucción automática."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "cadete",
+              "afirmacion": "Un VIX alto te dice hacia dónde va a ir el precio del mercado.",
+              "esVerdadero": false,
+              "explicacion": "El VIX mide CUÁNTO se espera que se mueva, no en qué dirección. Confundir volatilidad esperada con dirección es un error común."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "bauti",
+              "resumen": [
+                "Fear & Greed = ánimo del mercado (miedo↔codicia)",
+                "VIX = cuánta turbulencia se espera (no la dirección)",
+                "El régimen resume todo en una palabra — es contexto, no una orden"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U7-L3",
+          "titulo": "Soporte, resistencia y niveles",
+          "icono": "compass",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "bauti",
+              "titulo": "Los \"niveles a vigilar\"",
+              "texto": "En tu Panel vas a ver una lista de precios para índices y acciones — son <b>niveles</b>. No son predicciones: son puntos donde, históricamente, el precio reaccionó."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "bauti",
+              "titulo": "El vocabulario de los niveles",
+              "secciones": [
+                {
+                  "titulo": "Soporte",
+                  "texto": "Un precio que actuó como 'piso' antes: cuando el precio bajó hasta ahí, encontró compradores y rebotó. No es una garantía de que vuelva a pasar."
+                },
+                {
+                  "titulo": "Resistencia",
+                  "texto": "Lo opuesto: un 'techo' donde antes costó seguir subiendo. Si el precio lo supera con fuerza, puede convertirse en el nuevo soporte."
+                },
+                {
+                  "titulo": "Pivot",
+                  "texto": "El nivel bisagra del día: por encima suele leerse como zona más alcista, por debajo, más bajista. Es una referencia rápida, no una regla fija."
+                },
+                {
+                  "titulo": "Watchlist y \"riesgo\"",
+                  "texto": "Tu Panel marca cada ticker en seguimiento con un nivel de riesgo (bajo/medio/alto): mientras más alto, más se mueve el precio — más oportunidad, pero también más posibilidad de perder rápido."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Niveles reales de SPY (S&P 500)",
+                "texto": "El Panel mostraba niveles como 760,4 · 758,3 · 751,9 (pivot) · 748,2. Si el precio está sobre 751,9, se lee como zona más fuerte; si cae bajo, zona más débil. Son referencias para ENTENDER el mapa, no gatillos automáticos."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "bauti",
+              "pregunta": "Un ticker en tu watchlist tiene riesgo \"HIGH\". ¿Qué significa?",
+              "opciones": [
+                "Que su precio suele moverse fuerte — más potencial y más riesgo de golpe",
+                "Que la empresa está por quebrar",
+                "Que no se puede comprar"
+              ],
+              "correcta": 0,
+              "explicacion": "El nivel de riesgo describe qué tanto se mueve el precio (volatilidad), no si la empresa es buena o mala."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "bauti",
+              "resumen": [
+                "Soporte = piso histórico · Resistencia = techo histórico",
+                "Pivot = nivel bisagra de referencia rápida",
+                "Son mapas para leer, no promesas de lo que va a pasar"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U7-L4",
+          "titulo": "RSI y la media móvil",
+          "icono": "trendDown",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "bauti",
+              "titulo": "¿Subió o bajó \"muy rápido\"?",
+              "texto": "Tu Panel usa dos herramientas clásicas para eso: el <b>RSI</b> y la <b>media de 200 días (SMA200)</b>. Vamos a traducirlas."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "bauti",
+              "titulo": "RSI y SMA200, explicados",
+              "secciones": [
+                {
+                  "titulo": "RSI (0 a 100)",
+                  "texto": "Mide qué tan rápido subió o bajó un precio recientemente. Sobre 70 = 'sobrecompra' (subió muy rápido, podría hacer una pausa). Bajo 30 = 'sobreventa' (bajó muy rápido, podría rebotar). Entre 30-70 = zona neutral."
+                },
+                {
+                  "titulo": "SMA200 (\"la media\")",
+                  "texto": "El promedio del precio de los últimos 200 días. Si el precio está SOBRE su SMA200, la tendencia de fondo se lee como más sana; si está BAJO, más débil. Es una foto de largo plazo, no de hoy."
+                },
+                {
+                  "titulo": "\"Desde el máximo de 52 semanas\"",
+                  "texto": "Cuánto le falta (en %) para volver a su techo del último año. Estar muy lejos del máximo a veces se lee como 'zona de descuento' — pero también puede significar que algo cambió de verdad."
+                },
+                {
+                  "titulo": "\"Reversión a la media\"",
+                  "texto": "La idea de que, cuando un precio se aleja MUCHO de su promedio, tiende a volver hacia él con el tiempo. Es una tendencia estadística, no una ley física."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Leyendo el Oro real de tu Panel",
+                "texto": "Oro: RSI 41,8 (neutral) · bajo su SMA200 en -7,9% · a -22,6% de su máximo de 52 semanas. Traducido: no está ni sobrecomprado ni sobrevendido, la tendencia de fondo está algo débil, y está bastante lejos de su techo del año. Contexto, no una orden."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "bauti",
+              "pregunta": "Una acción tiene RSI de 85. ¿Qué se lee ahí?",
+              "opciones": [
+                "Sobrecompra: subió muy rápido, podría hacer una pausa",
+                "Que la empresa está quebrando",
+                "Que hay que comprarla de inmediato"
+              ],
+              "correcta": 0,
+              "explicacion": "RSI sobre 70 es la zona clásica de 'sobrecompra' — subió rápido. No dice si la empresa es buena, ni ordena vender."
+            },
+            {
+              "tipo": "vf",
+              "mascota": "cadete",
+              "afirmacion": "Si el RSI y la SMA200 dicen algo, hay que obedecer y operar de inmediato.",
+              "esVerdadero": false,
+              "explicacion": "Son lentes para leer el contexto técnico — no órdenes. Tu plan (índice + paciencia) no cambia por un número técnico."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "bauti",
+              "resumen": [
+                "RSI mide velocidad del movimiento (sobrecompra/sobreventa)",
+                "SMA200 = tendencia de largo plazo (sobre/bajo la media)",
+                "Son contexto para leer, nunca una orden automática"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U7-L5",
+          "titulo": "El macro de tu Panel",
+          "icono": "landmark",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "bauti",
+              "titulo": "Todo está conectado",
+              "texto": "Tu Panel muestra bonos, oro, dólar y petróleo junto a tus acciones. No es relleno — el macro mueve todo lo demás."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "bauti",
+              "titulo": "Los termómetros macro",
+              "secciones": [
+                {
+                  "titulo": "Bono del Tesoro a 10 años (\"yield\")",
+                  "texto": "Es como 'el precio del dinero'. Cuando sube, pedir prestado se encarece y las acciones (sobre todo tecnológicas) suelen sentirlo. Es uno de los números más vigilados del mundo."
+                },
+                {
+                  "titulo": "Oro y dólar",
+                  "texto": "Suelen subir cuando hay miedo o incertidumbre — son termómetros de 'refugio'. No siempre se mueven juntos: a veces el oro sube por miedo geopolítico aunque el dólar también suba."
+                },
+                {
+                  "titulo": "Petróleo",
+                  "texto": "Afecta la inflación (transporte, producción) y por lo tanto a las tasas de interés. Un salto fuerte de petróleo puede cambiar el humor de todo el mercado."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Cómo se conecta, con datos reales",
+                "texto": "Cuando el petróleo saltó por tensión geopolítica, el bono a 10 años subió (más inflación esperada → más tasa), y el Nasdaq cayó en el corto plazo. Una sola noticia macro movió tres termómetros distintos — por eso el Panel te los muestra juntos."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "bauti",
+              "pregunta": "El bono del Tesoro a 10 años sube fuerte. ¿Qué suele pasar con las acciones (en general)?",
+              "opciones": [
+                "Tienden a sentirlo negativamente — el crédito se encarece",
+                "No tiene ninguna relación",
+                "Siempre suben con fuerza"
+              ],
+              "correcta": 0,
+              "explicacion": "No es una regla mecánica, pero el yield del bono a 10 años es uno de los indicadores macro más vigilados justamente por su efecto sobre el costo del crédito."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "bauti",
+              "resumen": [
+                "El bono 10Y es el 'precio del dinero' — mueve todo lo demás",
+                "Oro y dólar = termómetros de refugio ante el miedo",
+                "El macro no predice: da el contexto detrás de los movimientos"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U7-L6",
+          "titulo": "Earnings y el calendario",
+          "icono": "calendar",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "bauti",
+              "titulo": "El calendario de tu Panel",
+              "texto": "¿Recuerdas los earnings de U6? Tu Panel te avisa CUÁNDO reporta cada empresa — para que no te agarre de sorpresa."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "bauti",
+              "titulo": "Cómo leer el calendario",
+              "secciones": [
+                {
+                  "titulo": "\"Antes de apertura\" / \"después de cierre\"",
+                  "texto": "Indica CUÁNDO se publica el reporte respecto al horario de mercado. Los reportes suelen salir en esos momentos justamente para que los inversores tengan tiempo de digerir la noticia antes de operar."
+                },
+                {
+                  "titulo": "Market cap (capitalización)",
+                  "texto": "El 'tamaño' de la empresa en dólares (precio de la acción × cantidad de acciones). Empresas grandes suelen moverse menos con sorpresas; empresas chicas, mucho más."
+                },
+                {
+                  "titulo": "Por qué vigilarlo (sin operar la fecha)",
+                  "texto": "Saber cuándo reporta una empresa que sigues te ayuda a esperar el dato con calma — no a apostar en el momento exacto. El día del earnings es, de hecho, uno de los más impredecibles para tradear."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Un caso real del calendario",
+                "texto": "El calendario mostraba a JPMorgan reportando el martes 'antes de apertura', con un market cap de ~899.000 millones de dólares. Ese dato solo te dice CUÁNDO mirar el reporte — no si conviene comprar antes o después."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "bauti",
+              "pregunta": "¿Para qué sirve principalmente el calendario de earnings del Panel?",
+              "opciones": [
+                "Para saber cuándo revisar el reporte de una empresa que sigues, con calma",
+                "Para saber el día exacto en que hay que comprar",
+                "Para adivinar si el precio va a subir ese día"
+              ],
+              "correcta": 0,
+              "explicacion": "Es una herramienta de organización y seguimiento — no una señal de trading. El día del earnings es especialmente impredecible."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "bauti",
+              "resumen": [
+                "El calendario te avisa CUÁNDO reporta cada empresa",
+                "Market cap = el tamaño de la empresa en dólares",
+                "Sirve para seguir con calma, no para apostar al día exacto"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U7-L7",
+          "titulo": "Un score no es una certeza",
+          "icono": "scale",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "cadete",
+              "titulo": "Soy Cadete, guardián anti-hype",
+              "texto": "Tu Panel usa un modelo interno (MAAT) que le pone un <b>score</b> a las empresas que sigues. Te explico qué es de verdad — sin vender humo."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "cadete",
+              "titulo": "Qué es (y qué NO es) un score",
+              "secciones": [
+                {
+                  "titulo": "Score = una opinión cuantificada",
+                  "texto": "Es el resultado de combinar varias reglas y datos en un número. No es una verdad revelada: es una forma ordenada de resumir información — igual que una nota de un profesor no es una garantía de tu futuro."
+                },
+                {
+                  "titulo": "\"Confianza\" (confidence)",
+                  "texto": "Un segundo número que dice qué tan seguro está el modelo de su propia opinión. Nunca es 100%. Un score alto CON confianza baja vale mucho menos que uno con confianza alta."
+                },
+                {
+                  "titulo": "Por qué esto es honestidad, no timidez",
+                  "texto": "Muchos venden sus modelos como si fueran infalibles. Tu Panel te muestra el score Y la incertidumbre — porque pretender certeza donde no la hay es, literalmente, vender humo."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Dos scores reales, leídos bien",
+                "texto": "CEG: score 21,5, confianza 29%. NU: score 5,3, confianza 35%. Ninguno de los dos es una orden de compra — son opiniones cuantificadas con su propio nivel de duda declarado."
+              }
+            },
+            {
+              "tipo": "vf",
+              "mascota": "cadete",
+              "afirmacion": "Un score alto en el Panel garantiza que la acción va a subir.",
+              "esVerdadero": false,
+              "explicacion": "Ningún score garantiza nada. Es una opinión ordenada con su propio nivel de confianza — nunca una promesa."
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "cadete",
+              "pregunta": "Ves un score de 20 con confianza de 25%. ¿Cómo lo lees?",
+              "opciones": [
+                "Una opinión con bastante incertidumbre declarada — hay que tomarla con pinzas",
+                "Una señal segura de compra",
+                "Un error del sistema"
+              ],
+              "correcta": 0,
+              "explicacion": "Confianza baja significa que el propio modelo está diciendo 'no estoy tan seguro'. Ignorar ese dato sería quedarse con la mitad de la información."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "cadete",
+              "resumen": [
+                "Score = opinión cuantificada, no una verdad",
+                "Confianza = qué tan seguro está el modelo (nunca 100%)",
+                "Mostrar la incertidumbre es honestidad, no debilidad"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U7-L8",
+          "titulo": "Gestión: proteger y decidir",
+          "icono": "unlock",
+          "xp": 20,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "bauti",
+              "titulo": "Los \"gatillos\" de gestión",
+              "texto": "Cuando ya tienes una posición, tu Panel puede marcarte 'gatillos' — avisos sobre qué revisar. Vamos al vocabulario."
+            },
+            {
+              "tipo": "guia",
+              "mascota": "bauti",
+              "titulo": "El vocabulario de gestión",
+              "secciones": [
+                {
+                  "titulo": "Proteger (stop)",
+                  "texto": "Un aviso de que el precio cayó fuerte desde su máximo reciente — 'a considerar: definir o ajustar un nivel de protección'. Es un recordatorio de disciplina, no una orden automática de vender."
+                },
+                {
+                  "titulo": "Recompra / acumular",
+                  "texto": "Un aviso de que el precio entró en una zona que el modelo lee como interesante para sumar, escalonado (de a poco, no todo de una vez)."
+                },
+                {
+                  "titulo": "\"Founder-led / lock-up\"",
+                  "texto": "¿Recuerdas U6? Cuando el fundador sigue al mando y hay un evento de 'lock-up' (vencimiento de restricciones de venta de acciones de insiders), el Panel lo marca como dato relevante a vigilar."
+                },
+                {
+                  "titulo": "La frase clave del Panel",
+                  "texto": "\"Reglas mecánicas 'a considerar', no predicciones. Vos ejecutás.\" — esa frase resume TODO este bloque. El Panel organiza información; la decisión y la ejecución son tuyas."
+                }
+              ],
+              "ejemplo": {
+                "titulo": "Un gatillo real, traducido",
+                "texto": "\"CEG — cayó -22,1% desde su máximo de ~3 meses. A considerar: definir/ajustar un stop de protección.\" Traducido: el precio bajó fuerte; el Panel te recuerda revisar tu plan de protección. No te dice 'vende ahora'."
+              }
+            },
+            {
+              "tipo": "quiz",
+              "mascota": "bauti",
+              "pregunta": "El Panel marca un gatillo de \"proteger\" en una posición tuya. ¿Qué hace correctamente el usuario?",
+              "opciones": [
+                "Lo toma como recordatorio para revisar su plan de riesgo — la decisión es suya",
+                "Vende automáticamente sin pensar",
+                "Ignora todos los gatillos siempre"
+              ],
+              "correcta": 0,
+              "explicacion": "Los gatillos son recordatorios de disciplina, no botones de venta automática. El propio Panel lo aclara: 'vos ejecutás'."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "bauti",
+              "resumen": [
+                "Proteger/stop = recordatorio de disciplina, no una orden",
+                "Recompra = zona interesante para sumar, escalonado",
+                "\"A considerar, no predicciones\" — la decisión y ejecución son tuyas"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "U7-L9",
+          "titulo": "Tu graduación",
+          "icono": "gradCap",
+          "xp": 30,
+          "cards": [
+            {
+              "tipo": "intro",
+              "mascota": "colmillo",
+              "titulo": "Campeón, llegaste",
+              "texto": "Empezaste sin saber qué era una acción. Hoy tienes tu primer índice comprado, un hábito de aporte automático, y sabes por qué la paciencia le gana a la adrenalina."
+            },
+            {
+              "tipo": "accion",
+              "mascota": "bauti",
+              "titulo": "Activa tu Panel",
+              "texto": "Último paso: conecta tu cuenta al Panel para seguir todo desde ahí.",
+              "pasos": [
+                "Abre tu Panel con tu usuario",
+                "Agrega tu primera empresa o índice para seguirlo",
+                "Revisa la sección de noticias/análisis de Bauti"
+              ],
+              "link": "https://panel-cartera.onrender.com",
+              "linkTexto": "Abrir mi Panel",
+              "aviso": "El Panel es una herramienta de seguimiento, no reemplaza tu criterio ni es asesoría personalizada."
+            },
+            {
+              "tipo": "cierre",
+              "mascota": "colmillo",
+              "texto": "Graduado. Ahora la disciplina es tuya, para siempre. 🦷🎓",
+              "resumen": [
+                "Terminaste el camino completo de Colmillo Rentable",
+                "Tienes plan, hábito y herramienta para seguir solo",
+                "Lo aburrido y constante siempre le gana a lo brillante y apurado"
+              ]
+            }
+          ]
+        }
+      ],
+      "opcional": true,
+      "etiqueta": "Avanzado"
+    }
+  ]
+}
