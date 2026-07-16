@@ -1,33 +1,286 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="theme-color" content="#111a15" />
-  <title>Colmillo Rentable — aprende a invertir</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@500;600;700;800&display=swap" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="assets/mascots/colmillo.png" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Curso gratis para aprender a invertir de verdad, en 5 minutos al dia. Sin humo: empiezas por lo basico y terminas con tu dinero trabajando." />
+<meta name="theme-color" content="#0f1712" />
+<link rel="icon" href="https://colmillo-rentable.onrender.com/assets/mascots/colmillo.png" />
+<!-- Open Graph / redes sociales -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Colmillo Rentable" />
+<meta property="og:title" content="Colmillo Rentable — aprende a invertir de verdad" />
+<meta property="og:description" content="Curso gratis para aprender a invertir de verdad, en 5 minutos al dia. Sin humo: empiezas por lo basico y terminas con tu dinero trabajando." />
+<meta property="og:image" content="https://colmillo-rentable.onrender.com/assets/splash_a.jpg" />
+<meta property="og:url" content="https://cstamigo-droid.github.io/colmillo-rentable/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Colmillo Rentable — aprende a invertir de verdad" />
+<meta name="twitter:description" content="Curso gratis para aprender a invertir de verdad, en 5 minutos al dia. Sin humo: empiezas por lo basico y terminas con tu dinero trabajando." />
+<meta name="twitter:image" content="https://colmillo-rentable.onrender.com/assets/splash_a.jpg" />
+<title>Colmillo Rentable — aprende a invertir de verdad</title>
+<style>
+  :root{
+    --bg:#0f1712; --bg2:#0b120e; --panel:#17231d; --panel2:#1c2a22;
+    --line:#26332b; --line-soft:#1f2a24;
+    --oro:#d4af37; --oro-cl:#e8cd7a; --oro-osc:#a9862a;
+    --verde:#3fae68; --verde-osc:#1f7a45;
+    --crema:#f3edda; --crema-dim:#d9d3bf; --mut:#93a096;
+    --serif: ui-serif, Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --maxw: 760px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{
+    font-family:var(--sans); color:var(--crema);
+    background:
+      radial-gradient(1200px 700px at 50% -8%, #16281d 0%, transparent 55%),
+      radial-gradient(900px 600px at 100% 100%, #13201a 0%, transparent 60%),
+      var(--bg);
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+  section{padding:64px 0; border-top:1px solid var(--line-soft)}
+  section:first-of-type{border-top:none}
+
+  .eyebrow{
+    font-size:12px; letter-spacing:2.5px; text-transform:uppercase;
+    color:var(--oro); font-weight:700; margin-bottom:18px;
+  }
+  h1,h2,h3{font-family:var(--serif); font-weight:600; text-wrap:balance; line-height:1.12}
+  h1{font-size:clamp(34px,7vw,52px); letter-spacing:-.5px}
+  h2{font-size:clamp(25px,4.6vw,34px); letter-spacing:-.3px; margin-bottom:8px}
+  h3{font-size:19px}
+  p{color:var(--crema-dim)}
+  .lead{font-size:clamp(17px,2.4vw,20px); color:var(--crema); max-width:60ch}
+  .muted{color:var(--mut)}
+  .kicker{color:var(--oro-cl)}
+
+  /* ---------- HERO ---------- */
+  .hero{padding-top:72px; text-align:center}
+  .crest{
+    width:76px; height:76px; margin:0 auto 26px; display:block;
+    filter:drop-shadow(0 6px 18px rgba(212,175,55,.25));
+  }
+  .hero h1{margin-bottom:20px}
+  .hero .lead{margin:0 auto 14px}
+  .hero .fine{font-size:14px; color:var(--mut); max-width:52ch; margin:0 auto 30px}
+  .hero .fine b{color:var(--crema-dim); font-weight:600}
+
+  .cta{
+    display:inline-flex; align-items:center; gap:10px; text-decoration:none;
+    background:linear-gradient(180deg,var(--oro-cl),var(--oro)); color:#231a05;
+    font-weight:800; font-size:16px; letter-spacing:.3px;
+    padding:15px 30px; border-radius:14px;
+    box-shadow:0 8px 22px rgba(212,175,55,.22), inset 0 1px 0 rgba(255,255,255,.4);
+    border:1px solid var(--oro-osc); transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .cta:hover{transform:translateY(-2px); box-shadow:0 12px 28px rgba(212,175,55,.32)}
+  .cta:focus-visible{outline:3px solid var(--oro-cl); outline-offset:3px}
+  .cta.small{font-size:15px; padding:12px 22px}
+  .cta-note{display:block; margin-top:14px; font-size:13px; color:var(--mut)}
+
+  /* ---------- JOURNEY ---------- */
+  .journey{list-style:none; display:flex; flex-direction:column; gap:14px; margin-top:26px}
+  .step{
+    display:grid; grid-template-columns:auto 1fr; gap:16px; align-items:start;
+    background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px 20px;
+  }
+  .step .n{
+    font-family:var(--serif); font-size:15px; font-weight:700; color:var(--oro);
+    width:34px; height:34px; border-radius:50%; display:grid; place-items:center;
+    border:1px solid var(--oro-osc); background:rgba(212,175,55,.07); flex:none;
+  }
+  .step h3{margin-bottom:3px}
+  .step p{font-size:15px}
+  .step .real{color:var(--verde); font-weight:600}
+
+  /* ---------- TWO PATHS ---------- */
+  .paths{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:26px}
+  @media(max-width:620px){.paths{grid-template-columns:1fr}}
+  .path{
+    background:linear-gradient(180deg,var(--panel2),var(--panel)); border:1px solid var(--line);
+    border-radius:18px; padding:24px 22px; position:relative; overflow:hidden;
+  }
+  .path.fast{border-color:rgba(63,174,104,.4)}
+  .path.deep{border-color:rgba(212,175,55,.4)}
+  .path .tag{
+    font-size:11px; letter-spacing:1.5px; text-transform:uppercase; font-weight:700;
+    padding:5px 11px; border-radius:999px; display:inline-block; margin-bottom:14px;
+  }
+  .path.fast .tag{color:#bff0d1; background:rgba(63,174,104,.14); border:1px solid rgba(63,174,104,.35)}
+  .path.deep .tag{color:var(--oro-cl); background:rgba(212,175,55,.1); border:1px solid rgba(212,175,55,.35)}
+  .path h3{font-size:22px; margin-bottom:6px}
+  .path .who{font-size:14px; color:var(--mut); margin-bottom:14px}
+  .path ul{list-style:none; display:flex; flex-direction:column; gap:9px}
+  .path li{font-size:14.5px; color:var(--crema-dim); padding-left:22px; position:relative}
+  .path li::before{content:"›"; position:absolute; left:4px; color:var(--oro); font-weight:800}
+  .paths-note{margin-top:16px; font-size:14px; color:var(--mut); text-align:center}
+
+  /* ---------- METHOD ---------- */
+  .method-lead{max-width:62ch; margin-bottom:8px}
+  .science{
+    font-size:13.5px; color:var(--mut); margin:6px 0 26px; padding-left:14px;
+    border-left:2px solid var(--oro-osc);
+  }
+  .principles{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  @media(max-width:620px){.principles{grid-template-columns:1fr}}
+  .pr{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:16px 17px}
+  .pr .h{display:flex; align-items:center; gap:10px; margin-bottom:5px}
+  .pr .dot{width:9px; height:9px; border-radius:50%; background:var(--oro); flex:none; box-shadow:0 0 0 4px rgba(212,175,55,.12)}
+  .pr h3{font-size:16px}
+  .pr p{font-size:14px}
+  .pr .stat{color:var(--verde); font-weight:700}
+
+  /* ---------- OUTCOMES ---------- */
+  .out{display:flex; flex-direction:column; gap:12px; margin-top:24px}
+  .out li{
+    list-style:none; display:grid; grid-template-columns:auto 1fr; gap:13px; align-items:start;
+    font-size:16px; color:var(--crema);
+  }
+  .check{
+    width:24px; height:24px; border-radius:7px; flex:none; margin-top:1px;
+    background:rgba(63,174,104,.14); border:1px solid rgba(63,174,104,.4);
+    display:grid; place-items:center; color:var(--verde); font-weight:900; font-size:13px;
+  }
+
+  /* ---------- CLOSER ---------- */
+  .closer{text-align:center; padding:72px 0 40px}
+  .closer h2{margin-bottom:14px}
+  .closer .lead{margin:0 auto 26px}
+  .honest{
+    max-width:58ch; margin:34px auto 0; font-size:13px; color:var(--mut);
+    background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 18px;
+  }
+  .foot{text-align:center; padding:28px 0 46px; font-size:13px; color:var(--mut)}
+  .foot .team{color:var(--crema-dim)}
+
+  @media(prefers-reduced-motion:no-preference){
+    .reveal{opacity:0; transform:translateY(14px); animation:rise .7s ease forwards}
+    @keyframes rise{to{opacity:1; transform:none}}
+    .d1{animation-delay:.05s}.d2{animation-delay:.14s}.d3{animation-delay:.22s}
+  }
+</style>
 </head>
 <body>
-  <!-- Barra superior: racha · XP -->
-  <header id="topbar" class="topbar hidden">
-    <div class="stat" title="Racha"><i id="ic-flame" class="stat-ic"></i><span id="stat-racha">0</span></div>
-    <div class="stat" title="XP"><i id="ic-zap" class="stat-ic"></i><span id="stat-xp">0</span></div>
-  </header>
+<div class="wrap">
 
-  <!-- Contenedor de vistas (lo llena el router) -->
-  <main id="app"></main>
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="crest reveal" viewBox="0 0 100 100" role="img" aria-label="Emblema Colmillo Rentable">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#d4af37" stroke-width="2"/>
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#e8cd7a" stroke-width=".6" opacity=".6"/>
+      <path d="M34 30 L34 62 Q34 72 50 72 Q66 72 66 62 L66 30 L58 30 L58 60 Q58 64 50 64 Q42 64 42 60 L42 30 Z" fill="#d4af37"/>
+      <path d="M46 30 L54 30 L50 46 Z" fill="#0f1712"/>
+    </svg>
+    <p class="eyebrow reveal d1">Curso gratis · Inversión honesta</p>
+    <h1 class="reveal d1">Aprende a invertir<br>de verdad.</h1>
+    <p class="lead reveal d2">En <b class="kicker">5 minutos al día</b>, sin saber nada al empezar. Sin humo, sin promesas de hacerte rico mañana. Terminas con tu dinero <b>trabajando por ti</b> — no solo "sabiendo".</p>
+    <p class="fine reveal d2">Un camino corto y claro te lleva de "no entiendo nada" a <b>abrir tu cuenta y hacer tu primera inversión real</b>. Lo guía Colmillo, un mentor con paciencia de veinte años.</p>
+    <a class="cta reveal d3" href="https://colmillo-rentable.onrender.com" target="_blank" rel="noopener">Comenzar gratis →</a>
+    <span class="cta-note reveal d3">Sin tarjeta. Sin costo. Solo tu correo para guardar tu progreso.</span>
+  </section>
 
-  <!-- Navegación inferior -->
-  <nav id="tabbar" class="tabbar hidden">
-    <button data-route="#/mapa"   class="tab"><i id="ic-map" class="tab-ic"></i><span>Aprender</span></button>
-    <button data-route="#/perfil" class="tab"><i id="ic-paw" class="tab-ic"></i><span>Perfil</span></button>
-    <button data-route="#/panel"  class="tab"><i id="ic-activity" class="tab-ic"></i><span>Panel</span></button>
-  </nav>
+  <!-- QUÉ APRENDES -->
+  <section>
+    <p class="eyebrow">Qué vas a aprender</p>
+    <h2>De "no sé nada" a manejar tu dinero con criterio</h2>
+    <p class="lead muted">El camino sube de a poco. Cada etapa es simple, y varias terminan en una acción real con tu propio dinero.</p>
+    <ol class="journey">
+      <li class="step"><span class="n">1</span><div><h3>Ordenar tu plata primero</h3><p>Gastar menos de lo que ganas, armar tu fondo de emergencia, salir de la deuda cara y entender el interés compuesto. La base que casi nadie te enseña.</p></div></li>
+      <li class="step"><span class="n">2</span><div><h3>Por qué y cómo invertir</h3><p>Qué es un índice y un ETF, por qué diversificar, y cómo ganás de verdad. En simple, con números reales.</p></div></li>
+      <li class="step"><span class="n">3</span><div><h3>Manos a la obra <span class="real">(acción real)</span></h3><p>Eliges tu plataforma por país, <span class="real">abres tu cuenta y haces tu primera inversión</span>. No es teoría: sales con el dinero puesto a trabajar.</p></div></li>
+      <li class="step"><span class="n">4</span><div><h3>Mantenerlo andando</h3><p>Qué hacer cuando el mercado baja (spoiler: casi nada), cómo aportar cada mes y no vender en pánico.</p></div></li>
+      <li class="step"><span class="n">5</span><div><h3>Nivel avanzado <span class="muted">(opcional)</span></h3><p>AFP y pensiones en Chile, cómo usar la IA para analizar el mercado, y qué son las opciones y el trading — con las líneas rojas bien claras.</p></div></li>
+    </ol>
+  </section>
 
-  <script type="module" src="js/app.js"></script>
+  <!-- DOS CAMINOS -->
+  <section>
+    <p class="eyebrow">Tú eliges el ritmo</p>
+    <h2>Dos caminos, una misma app</h2>
+    <p class="lead muted">Un test de 30 segundos al inicio arma tu recorrido a tu medida. ¿Con prisa o con ganas de entender a fondo? Los dos sirven.</p>
+    <div class="paths">
+      <div class="path fast">
+        <span class="tag">Camino rápido</span>
+        <h3>Lo esencial, sin vueltas</h3>
+        <p class="who">Para el que quiere empezar ya.</p>
+        <ul>
+          <li>Ordenar tu dinero</li>
+          <li>Entender la inversión en simple</li>
+          <li>Abrir cuenta e invertir de verdad</li>
+          <li>Te gradúas: <b>"ya eres inversor"</b></li>
+        </ul>
+      </div>
+      <div class="path deep">
+        <span class="tag">Profundizar</span>
+        <h3>Entenderlo a fondo</h3>
+        <p class="who">Para el que quiere dominar el tema.</p>
+        <ul>
+          <li>Los maestros (Buffett, Bogle)</li>
+          <li>AFP Chile e IA para el mercado</li>
+          <li>Opciones y trading (con cuidado)</li>
+          <li>Tu propio panel de análisis</li>
+        </ul>
+      </div>
+    </div>
+    <p class="paths-note">Empiezas por lo básico gratis. Profundizar es opcional y se desbloquea cuando tú quieras.</p>
+  </section>
+
+  <!-- CÓMO ENSEÑAMOS -->
+  <section>
+    <p class="eyebrow">Cómo enseñamos</p>
+    <h2>Pensado para que de verdad aprendas</h2>
+    <p class="lead method-lead">La mayoría de los cursos de finanzas se olvidan en semanas. El nuestro no está armado por corazonadas: usa lo que la ciencia del aprendizaje demostró que funciona.</p>
+    <p class="science">Basado en <i>Make It Stick</i> (Harvard University Press) y el método Duolingo. La teoría abstracta se evapora; lo aplicado al momento se queda.</p>
+    <div class="principles">
+      <div class="pr"><div class="h"><span class="dot"></span><h3>Lazos cortos</h3></div><p>Lecciones de 2–3 minutos, una idea cada una. Sin ladrillos de texto ni clases eternas.</p></div>
+      <div class="pr"><div class="h"><span class="dot"></span><h3>Te pregunta, no te dicta</h3></div><p>Recordar activamente retiene <span class="stat">80%</span> a la semana, contra <span class="stat">34%</span> de solo leer.</p></div>
+      <div class="pr"><div class="h"><span class="dot"></span><h3>Justo antes de usarlo</h3></div><p>Cada cosa se enseña en el momento de aplicarla en una decisión real. Así se fija.</p></div>
+      <div class="pr"><div class="h"><span class="dot"></span><h3>Repaso y racha</h3></div><p>Te devuelve lo aprendido justo antes de que lo olvides, y la racha diaria te trae de vuelta.</p></div>
+    </div>
+  </section>
+
+  <!-- CÓMO ENTRAR -->
+  <section>
+    <p class="eyebrow">Cómo empezar</p>
+    <h2>Estás a tres pasos y treinta segundos</h2>
+    <ol class="journey">
+      <li class="step"><span class="n">1</span><div><h3>Abre el curso</h3><p>Entra al link desde tu teléfono o computador. Funciona en el navegador — no tienes que instalar nada.</p></div></li>
+      <li class="step"><span class="n">2</span><div><h3>Deja tu correo y responde el mini test</h3><p>Tu país, tu edad y qué buscas. Con eso te armamos un camino a tu medida. Toma medio minuto.</p></div></li>
+      <li class="step"><span class="n">3</span><div><h3>Empieza tu primera lección</h3><p>Tres minutos y ya aprendiste algo que puedes usar. Vuelve mañana por tu racha.</p></div></li>
+    </ol>
+    <div style="text-align:center; margin-top:30px">
+      <a class="cta" href="https://colmillo-rentable.onrender.com" target="_blank" rel="noopener">Entrar al curso →</a>
+      <span class="cta-note">colmillo-rentable.onrender.com · la primera visita puede tardar unos segundos en despertar.</span>
+    </div>
+  </section>
+
+  <!-- CON QUÉ TE VAS -->
+  <section>
+    <p class="eyebrow">Qué esperamos que logres</p>
+    <h2>No que "sepas". Que lo hagas.</h2>
+    <ul class="out">
+      <li><span class="check">✓</span><div>Entender cómo funciona el dinero y la inversión, <b>sin miedo ni palabras raras</b>.</div></li>
+      <li><span class="check">✓</span><div>Tu <b>cuenta abierta</b> y tu <b>primera inversión hecha</b>, si decides dar el paso.</div></li>
+      <li><span class="check">✓</span><div>El <b>hábito</b> de apartar algo cada mes y dejar que el tiempo trabaje.</div></li>
+      <li><span class="check">✓</span><div>Criterio para <b>no caer en estafas</b> ni en promesas de plata fácil.</div></li>
+    </ul>
+  </section>
+
+  <!-- CIERRE -->
+  <section class="closer">
+    <p class="eyebrow">Es gratis</p>
+    <h2>Tu yo de sesenta años<br>te lo va a agradecer.</h2>
+    <p class="lead">No te hacemos rico mañana. Te enseñamos a construirlo con paciencia, empezando hoy con lo poco que tengas.</p>
+    <a class="cta" href="https://colmillo-rentable.onrender.com" target="_blank" rel="noopener">Comenzar gratis ahora →</a>
+    <p class="honest">Colmillo Rentable es <b>educación</b>, no asesoría financiera personalizada. Enseñamos el método y la disciplina; las decisiones sobre tu dinero siempre son tuyas. Cuando recomendamos una plataforma, te lo decimos con transparencia.</p>
+  </section>
+
+  <div class="foot">
+    <p class="team">Colmillo · Lauta · Bauti · Cadete — tu equipo para aprender a invertir.</p>
+    <p style="margin-top:6px">Hecho con paciencia. 🐶🎩</p>
+  </div>
+
+</div>
 </body>
 </html>
